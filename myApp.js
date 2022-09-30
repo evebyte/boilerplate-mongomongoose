@@ -142,6 +142,7 @@ const removeManyPeople = (done) => {
 		done(null, response);
 	});
 };
+// note: collection.remove() is deprecated. Use `deleteOne`, `deleteMany`, or `bulkWrite` instead.
 
 // we can chain methods like in jQuery by not passing the callback to the search method, instead we chain the method .exec() at the end of our search and filter chain
 const queryChain = (done) => {
